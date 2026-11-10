@@ -14,7 +14,6 @@ a{color:inherit}
 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 svg .fill,.ico polygon,.btn polygon,.legend polygon{fill:currentColor}
 h1,h2,h3,.logo{font-family:var(--h)}
-h1,h2,.logo,.stats b{font-family:var(--s);font-weight:900;letter-spacing:.01em;text-transform:uppercase}
 h2{font-size:clamp(32px,5vw,52px);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:16px}
 h3{font-size:20px;font-weight:800;margin:18px 0 4px}
 p+p{margin-top:12px}
