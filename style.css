@@ -1,7 +1,10 @@
+@font-face{font-family:'Flock Stencil';src:url(fonts/stencil.woff2) format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'Bricolage Grotesque';src:url(fonts/bricolage.woff2) format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:'Inter';src:url(fonts/inter.woff2) format('woff2');font-weight:100 900;font-display:swap}
 :root{
   --paper:#f4efe6; --cream:#ebe3d3; --ink:#1c1c1a; --moss:#2e4636;
   --rust:#d4602a; --sky:#1f6fb2; --muted:#5d5a52;
-  --h:'Bricolage Grotesque',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+  --h:'Bricolage Grotesque',system-ui,sans-serif; --s:'Flock Stencil',Impact,sans-serif; --b:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
@@ -11,6 +14,7 @@ a{color:inherit}
 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 svg .fill,.ico polygon,.btn polygon,.legend polygon{fill:currentColor}
 h1,h2,h3,.logo{font-family:var(--h)}
+h1,h2,.logo,.stats b{font-family:var(--s);font-weight:900;letter-spacing:.01em;text-transform:uppercase}
 h2{font-size:clamp(32px,5vw,52px);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:16px}
 h3{font-size:20px;font-weight:800;margin:18px 0 4px}
 p+p{margin-top:12px}
