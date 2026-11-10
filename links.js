@@ -2,7 +2,7 @@
 const LINKS = {
   instagram: "#",
   facebook: "#",
-  map: "#",        // Flock Google map
+  map: "https://www.google.com/maps/d/viewer?mid=1nom_b3xQwU4qwGFV-rnqQrbsJ6s0nk0",        // Flock Google map
   hkhike: "#",     // Hong Kong Hike Mui Wo trail
   tours: "#",      // Luma booking page
   crowdfund: "#",
