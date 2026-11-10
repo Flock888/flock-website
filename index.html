@@ -10,17 +10,14 @@
 </head>
 <body>
 
-<!-- ============ EASY-EDIT LINKS (swap the # for real links) ============ -->
-<!-- Instagram, Facebook, Google map, tour booking, crowdfunding, shop, contact -->
-
 <header class="nav">
-  <a href="#top" class="logo">FLOCK</a>
+  <a href="index.html" class="logo">FLOCK</a>
   <nav>
-    <a href="#birds">The birds</a>
-    <a href="#find">Find them</a>
-    <a href="#tours">Tours</a>
-    <a href="#support">Support</a>
-    <a href="#about">About</a>
+    <a href="birds.html">The birds</a>
+    <a href="find.html">Find them</a>
+    <a href="tours.html">Tours</a>
+    <a href="support.html">Support</a>
+    <a href="about.html">About</a>
   </nav>
   <div class="social">
     <a href="#" class="ico" aria-label="Instagram" data-link="instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg></a>
@@ -28,6 +25,7 @@
   </div>
 </header>
 
+<main>
 <section class="hero" id="top">
   <img src="img/home.jpg" alt="Two visitors looking at the Fairy Pitta mural on an abandoned house">
   <div class="hero-text">
@@ -35,8 +33,8 @@
     <h1>Wild birds on<br>forgotten walls.</h1>
     <p class="lede">22 native Hong Kong birds, painted on abandoned houses around Lantau. Pull on your boots and go and find them.</p>
     <div class="btns">
-      <a href="#birds" class="btn">See the birds</a>
-      <a href="#find" class="btn ghost"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Find them</a>
+      <a href="birds.html" class="btn">See the birds</a>
+      <a href="find.html" class="btn ghost"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Find them</a>
     </div>
   </div>
 </section>
@@ -52,102 +50,14 @@
   <p>Flock started with a simple idea: take Lantau's empty, crumbling village houses and give them back to the birds that live around them. Every mural is a native Hong Kong species, painted big, in spray paint, by street artist Aspire. Every one was paid for by people who love this island.</p>
 </section>
 
-<section id="birds" class="wrap">
-  <div class="head">
-    <h2>The birds</h2>
-    <p>Tap a bird for the full picture. <span class="legend"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg> watch it being painted</span> <span class="legend"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> find it</span></p>
+<section class="wrap tiles-wrap">
+  <div class="tiles">
+    <a href="birds.html" class="tile big"><img src="img/bird-hoopoe.jpg" alt="Hoopoe mural"><div><h2>The birds</h2><p>All 22 murals, from the Hoopoe to the Shrike</p></div></a>
+    <a href="find.html" class="tile"><img src="img/bird-shrike.jpg" alt="Shrike mural from above"><div><h2>Find them</h2><p>Maps, trails and tips for the hunt</p></div></a>
+    <a href="tours.html" class="tile"><img src="img/tours.jpg" alt="A Flock tour group"><div><h2>Tours</h2><p>Walk the murals with Dominic</p></div></a>
+    <a href="support.html" class="tile"><img src="img/support.jpg" alt="Myna mural through a window"><div><h2>Support</h2><p>Help paint the next birds</p></div></a>
+    <a href="about.html" class="tile"><img src="img/about.jpg" alt="Hoopoe mural at dusk"><div><h2>About</h2><p>Who's behind Flock</p></div></a>
   </div>
-  <div class="grid" id="grid"></div>
-</section>
-
-<section id="find" class="band moss">
-  <div class="wrap two">
-    <div>
-      <h2>Go and find them</h2>
-      <p>The birds are scattered across Lantau: down village paths, up in the hills, deep in the trees. Half the fun is the hunt.</p>
-      <ul class="ticks">
-        <li>Use the Flock map to plan your walk</li>
-        <li>Try the Mui Wo trail with Hong Kong Hike: 13 murals in one day</li>
-        <li>New series stay secret until every bird is finished</li>
-        <li>Please be kind: these are old buildings, so look but don't climb</li>
-      </ul>
-      <div class="btns">
-        <a href="#" class="btn light" data-link="map"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Open the Flock map</a>
-        <a href="#" class="btn ghost light" data-link="hkhike"><svg viewBox="0 0 24 24"><path d="M3 20l6-12 4 7 3-4 5 9z"/></svg>Mui Wo trail</a>
-      </div>
-    </div>
-    <div class="mapcard">
-      <img src="img/bird-shrike.jpg" alt="Shrike mural seen from above on a rooftop at Sunset Peak">
-      <p>The Shrike, on a rooftop at Sunset Peak, 869m up. Bring water.</p>
-    </div>
-  </div>
-</section>
-
-<section id="tours" class="wrap two">
-  <img src="img/tours.jpg" alt="A group on a Flock tour listening in front of the White-throated Kingfisher mural" class="rounded">
-  <div>
-    <h2>Walk with us</h2>
-    <p>Join Dominic on a guided walk to the murals. Hear how each bird was chosen, how the walls were found, and what it's like painting in the jungle with Aspire. You'll also get a sneak peek at what's coming next.</p>
-    <p>Tours help pay for the next series. Every booking puts paint on a wall.</p>
-    <div class="note"><b>Next tour:</b> dates coming soon</div>
-    <div class="btns">
-      <a href="#" class="btn" data-link="tours"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Book a tour</a>
-    </div>
-  </div>
-</section>
-
-<section id="support" class="band cream">
-  <div class="wrap">
-    <div class="head">
-      <h2>Help paint the next birds</h2>
-      <p>Flock is a non-profit and is paid for entirely by its community, the Flock Buddies. Here's how to join in.</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <svg viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6.5-8 11-8 11z"/></svg>
-        <h3>Back the next series</h3>
-        <p>Chip in to bring Aspire back and put 8 more birds on Lantau's walls.</p>
-        <a href="#" data-link="crowdfund">Back Flock →</a>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24"><path d="M8 3l-5 4 3 4 2-1v11h8V10l2 1 3-4-5-4c0 2-2 3-4 3s-4-1-4-3z"/></svg>
-        <h3>Tees and prints</h3>
-        <p>Limited-edition screen-printed tees and signed A3 prints of the birds.</p>
-        <a href="#" data-link="shop">See what's available →</a>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M14 20c0-2.5 1.5-4.5 3-4.5s4 1.5 4 4.5"/></svg>
-        <h3>Become a Flock Buddy</h3>
-        <p>Our membership club is coming soon: first dibs on tours, prints and secret bird reveals.</p>
-        <a href="#" data-link="buddies">Get on the list →</a>
-      </div>
-      <div class="card">
-        <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-        <h3>Commission a bird</h3>
-        <p>Businesses and organisations: sponsor a mural or bring Flock to your wall.</p>
-        <a href="#" data-link="contact">Talk to us →</a>
-      </div>
-    </div>
-    <div class="thanks">
-      <p>With thanks to our sponsors and partners</p>
-      <div class="partners"><span>Bupa</span><span>UTMB</span><span>Silvermine</span><span>Hong Kong Hike</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="wrap two">
-  <div>
-    <h2>Who's behind it</h2>
-    <h3>Dominic Johnson-Hill</h3>
-    <p>Founder of Plastered 8 and the ideas man behind Flock. Lives on Lantau, between the sea and the forest, and couldn't walk past one more empty house without thinking it needed a bird.</p>
-    <h3>Aspire</h3>
-    <p>UK street artist, known in the scene as "the bird man". He paints every Flock mural freehand, in spray paint only. He's still active on the streets back home, so he keeps his face out of the picture.</p>
-    <div class="press">
-      <p>As seen in</p>
-      <div><span>Associated Press</span><span>Ming Pao</span><span>Zolima CityMag</span></div>
-    </div>
-  </div>
-  <img src="img/about.jpg" alt="A Flock mural on a ruined house in the evening light" class="rounded">
 </section>
 
 <section class="band ink">
@@ -157,6 +67,7 @@
     <a href="#" class="btn light" data-link="instagram"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>Watch on Instagram</a>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap foot">
@@ -166,83 +77,6 @@
   </div>
 </footer>
 
-<div class="lightbox" id="lb" hidden>
-  <button class="close" aria-label="Close">×</button>
-  <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
-</div>
-
-<script>
-// ===== Links: put the real web addresses here =====
-const LINKS = {
-  instagram: "#",
-  facebook: "#",
-  map: "#",        // Flock Google map
-  hkhike: "#",     // Hong Kong Hike Mui Wo trail
-  tours: "#",      // Luma booking page
-  crowdfund: "#",
-  shop: "#",
-  buddies: "#",
-  contact: "#"
-};
-
-// ===== The birds: one line each. video = link to the making-of clip =====
-const BIRDS = [
-  ["Hoopoe", "hoopoe"],
-  ["Fairy Pitta", "fairy-pita"],
-  ["White-throated Kingfisher", "white-throated-kingfisher"],
-  ["Red-billed Blue Magpie", "red-billed-blue-magpie"],
-  ["Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine"],
-  ["Shrike", "shrike", "Rooftop at Sunset Peak, 869m"],
-  ["Black-capped Kingfisher", "black-capped-kingfisher"],
-  ["Yellow-rumped Flycatcher (male)", "yellow-rumped-flycatcher-male"],
-  ["Yellow-rumped Flycatcher (female)", "yellow-rumped-flycatcher-female"],
-  ["Amur Paradise Flycatcher", "amur-flycatcher"],
-  ["Grey Wagtail", "grey-wagtail"],
-  ["Oriental Magpie Robin", "oriental-magpie-robin"],
-  ["Silver-eared Mesia", "silver-eared-mesia"],
-  ["Sunbird", "sunbird"],
-  ["Redstart", "red-start"],
-  ["Little Bunting", "little-bunting"],
-  ["Yellow-browed Warbler", "yellow-browed-warbler"],
-  ["Swinhoe's White-eye", "swinhoe-white-eye"],
-  ["Tailorbird", "tailor-bird"],
-  ["Waterhen", "waterhen"],
-  ["Babbler", "babbler"],
-  ["Myna", "myna-bird"]
-];
-
-const play = '<svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>';
-const pin = '<svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>';
-const grid = document.getElementById("grid");
-BIRDS.forEach(([name, file, note]) => {
-  const el = document.createElement("article");
-  el.className = "bird";
-  el.innerHTML = `
-    <button class="pic" aria-label="View ${name}"><img loading="lazy" src="img/bird-${file}.jpg" alt="${name} mural"></button>
-    <div class="meta">
-      <h3>${name}</h3>
-      <div class="acts">
-        <a href="${LINKS.instagram}" class="ico" title="Watch it being painted">${play}</a>
-        <a href="${LINKS.map}" class="ico" title="Find it on the map">${pin}</a>
-      </div>
-    </div>`;
-  el.querySelector(".pic").onclick = () => openLb(`img/bird-${file}.jpg`, name + (note ? " · " + note : ""));
-  grid.appendChild(el);
-});
-
-document.querySelectorAll("[data-link]").forEach(a => {
-  const url = LINKS[a.dataset.link];
-  if (url && url !== "#") { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
-});
-
-const lb = document.getElementById("lb");
-function openLb(src, cap) {
-  document.getElementById("lbimg").src = src;
-  document.getElementById("lbcap").textContent = cap;
-  lb.hidden = false;
-}
-lb.onclick = e => { if (e.target !== document.getElementById("lbimg")) lb.hidden = true; };
-document.addEventListener("keydown", e => { if (e.key === "Escape") lb.hidden = true; });
-</script>
+<script src="links.js"></script>
 </body>
 </html>
