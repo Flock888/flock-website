@@ -122,7 +122,9 @@ footer{border-top:1px solid rgba(0,0,0,.08)}
 /* lightbox */
 .lightbox{position:fixed;inset:0;z-index:50;background:rgba(10,10,10,.92);display:grid;place-items:center;padding:24px}
 .lightbox[hidden]{display:none}
-.lightbox img{max-height:84vh;width:auto;border-radius:10px}
+.lightbox img,.lightbox video{max-height:84vh;max-width:92vw;width:auto;border-radius:10px;margin:0 auto;display:block;background:#000}
+.lightbox [hidden]{display:none}
+.acts button.ico{border:0;background:none;cursor:pointer;color:var(--sky);padding:0}
 .lightbox figcaption{color:#fff;text-align:center;margin-top:12px;font-family:var(--h);font-size:20px}
 .close{position:absolute;top:14px;right:20px;background:none;border:0;color:#fff;font-size:42px;cursor:pointer}
 
