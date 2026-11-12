@@ -6,7 +6,7 @@ const LINKS = {
   instagram: "https://www.instagram.com/wangtongart/",
   facebook: "https://www.facebook.com/share/1DuyoUMjuH/",
   map: "https://www.google.com/maps/d/viewer?mid=1nom_b3xQwU4qwGFV-rnqQrbsJ6s0nk0",        // Flock Google map
-  hkhike: "#",     // Hong Kong Hike Mui Wo trail
+  hkhike: "https://www.hongkonghike.com/flock-murals-hike-discover-the-birds-taking-over-mui-wo-walls/",     // Hong Kong Hike Mui Wo trail
   tours: "#",      // Luma booking page
   crowdfund: "#",
   shop: "#",
