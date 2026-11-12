@@ -162,3 +162,6 @@ footer{border-top:1px solid rgba(0,0,0,.08)}
 .form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--moss)}
 .btn.wa{background:#1fa855;border-color:#1fa855;justify-content:center;cursor:pointer;font-size:17px}
 @media (max-width:520px){.form{grid-template-columns:1fr}}
+
+.small{font-size:13px;color:var(--muted)}
+.disclaimer{margin-top:28px;padding:14px 18px;border-left:4px solid var(--rust);background:rgba(0,0,0,.03);border-radius:6px;font-size:15px;max-width:720px}
