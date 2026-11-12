@@ -11,10 +11,10 @@ const LINKS = {
   crowdfund: "#",
   shop: "#",
   buddies: "#",
-  contact: "#"
+  contact: "mailto:flock@plastered.com"
 };
 
 document.querySelectorAll("[data-link]").forEach(a => {
   const url = LINKS[a.dataset.link];
-  if (url && url !== "#") { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+  if (url && url !== "#") { a.href = url; if (!url.startsWith("mailto:")) { a.target = "_blank"; a.rel = "noopener"; } }
 });
