@@ -1,6 +1,9 @@
 {
   "name": "flock-website",
   "compatibility_date": "2026-11-01",
+  // Site is OFFLINE while we finish it. Set both to true to go public.
+  "workers_dev": false,
+  "preview_urls": false,
   "assets": {
     "directory": "."
   }
