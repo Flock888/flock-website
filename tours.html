@@ -32,10 +32,27 @@
     <h2>Walk with us</h2>
     <p>Join Dominic on a guided walk to the murals. Hear how each bird was chosen, how the walls were found, and what it's like painting in the jungle with Aspire. You'll also get a sneak peek at what's coming next.</p>
     <p>Tours help pay for the next series. Every booking puts paint on a wall.</p>
-    <div class="note"><b>Next tour:</b> dates coming soon</div>
-    <div class="btns">
-      <a href="#" class="btn" data-link="tours"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Book a tour</a>
+    <p>Every walk is booked privately, for friends, families, schools and companies. Tell us roughly when and how many, and we'll sort out the rest with you on WhatsApp.</p>
+    <div class="btns"><a href="#book" class="btn"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Book a walk</a></div>
+  </div>
+</section>
+
+<section class="band cream" id="book">
+  <div class="wrap book">
+    <div class="head">
+      <h2>Book a walk</h2>
+      <p>Fill this in and tap send. WhatsApp opens with your message ready to go.</p>
     </div>
+    <form id="bookform" class="form">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Preferred date<input name="date" type="date"></label>
+      <label>How many people?<input name="people" type="number" min="1" max="60" placeholder="e.g. 6"></label>
+      <label>Language
+        <select name="lang"><option>English</option><option>廣東話 Cantonese</option><option>普通話 Mandarin</option></select>
+      </label>
+      <label class="full">Anything else?<textarea name="note" rows="3" placeholder="Kids coming? Fitness level? Birthday? Company outing?"></textarea></label>
+      <button class="btn wa full" type="submit"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg>Send on WhatsApp</button>
+    </form>
   </div>
 </section>
 </main>
@@ -49,5 +66,6 @@
 </footer>
 
 <script src="links.js"></script>
+<script src="book.js"></script>
 </body>
 </html>

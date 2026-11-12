@@ -153,3 +153,12 @@ footer{border-top:1px solid rgba(0,0,0,.08)}
 }
 
 @media (max-width:900px){.hero-text{left:20px;right:20px;top:auto;bottom:4%;transform:none}.hero-text h1{font-size:34px;margin:6px 0 0}.hero-text .btns{margin-top:16px}.hero::after{background:linear-gradient(transparent 62%,rgba(0,0,0,.8) 85%)}}
+
+/* booking form */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px}
+.form label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}
+.form .full{grid-column:1/-1}
+.form input,.form select,.form textarea{font:inherit;font-weight:400;padding:12px 14px;border:1.5px solid #cfc6b4;border-radius:10px;background:var(--paper);color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--moss)}
+.btn.wa{background:#1fa855;border-color:#1fa855;justify-content:center;cursor:pointer;font-size:17px}
+@media (max-width:520px){.form{grid-template-columns:1fr}}
