@@ -1,8 +1,8 @@
-// Tour booking: turns the form into a ready-written WhatsApp message
+// Walk enquiries: turns the form into a ready-written WhatsApp message
 document.getElementById("bookform").addEventListener("submit", e => {
   e.preventDefault();
   const f = new FormData(e.target);
-  let msg = "Hi Flock! I'd like to book a walk." +
+  let msg = "Hi Flock! I'd like to ask about a walk." +
     "\nName: " + f.get("name") +
     "\nDate: " + (f.get("date") || "flexible") +
     "\nPeople: " + (f.get("people") || "?") +
