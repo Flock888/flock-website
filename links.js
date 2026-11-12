@@ -1,5 +1,5 @@
 // ===== WhatsApp number for tour bookings: country code + number, no spaces or + =====
-const WHATSAPP = "85200000000";
+const WHATSAPP = "85293855721";
 
 // ===== Links: put the real web addresses here =====
 const LINKS = {
