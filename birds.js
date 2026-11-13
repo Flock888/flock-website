@@ -7,7 +7,7 @@ const BIRDS = [
   ["Fairy Pitta", "fairy-pita", "", "mt"],
   ["White-throated Kingfisher", "white-throated-kingfisher", "", ""],
   ["Red-billed Blue Magpie", "red-billed-blue-magpie", "", "t"],
-  ["Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "m"],
+  ["Red-whiskered Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "m"],
   ["Long-tailed Shrike", "shrike", "Rooftop at Sunset Peak, 869m", "m"],
   ["Black-capped Kingfisher", "black-capped-kingfisher", "", "mt"],
   ["Yellow-rumped Flycatcher (male)", "yellow-rumped-flycatcher-male", "", "mt"],
