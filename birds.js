@@ -5,12 +5,12 @@
 const SERIES = [
   { name: "Series 1", birds: [
     ["Red-billed Blue Magpie", "red-billed-blue-magpie", "", "t"],
-    ["Amur Paradise Flycatcher", "amur-flycatcher", "", ""],
-    ["Grey Wagtail", "grey-wagtail", "", ""],
+    ["Amur Paradise Flycatcher", "amur-flycatcher", "", "t"],
+    ["Grey Wagtail", "grey-wagtail", "", "t"],
     ["Daurian Redstart", "red-start", "", ""],
     ["Yellow-browed Warbler", "yellow-browed-warbler", "", ""],
-    ["Swinhoe's White-eye", "swinhoe-white-eye", "", ""],
-    ["White-throated Kingfisher", "white-throated-kingfisher", "", ""],
+    ["Swinhoe's White-eye", "swinhoe-white-eye", "", "t"],
+    ["White-throated Kingfisher", "white-throated-kingfisher", "", "t"],
     ["Long-tailed Shrike", "shrike", "Rooftop at Sunset Peak, 869m", "m"]
   ]},
   { name: "Series 2", birds: [
