@@ -24,7 +24,7 @@ const BIRDS = [
   ["Tailorbird", "tailor-bird", "", "m"],
   ["Waterhen", "waterhen", "", "mt"],
   ["Streak-breasted Scimitar Babbler", "babbler", "", "mt"],
-  ["Myna", "myna-bird", "", "mt"]
+  ["Common Myna", "myna-bird", "", "mt"]
 ];
 
 const ICON = {
