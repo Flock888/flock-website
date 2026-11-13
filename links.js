@@ -9,8 +9,7 @@ const LINKS = {
   hkhike: "https://www.hongkonghike.com/flock-murals-hike-discover-the-birds-taking-over-mui-wo-walls/",     // Hong Kong Hike Mui Wo trail
   tours: "#",      // Luma booking page
   crowdfund: "https://wa.me/85293855721?text=Hi%20Flock%21%20Please%20let%20me%20know%20when%20the%20next%20crowdfunding%20round%20opens.",
-  shop: "https://wa.me/85293855721?text=Hi%20Flock%21%20I%27d%20like%20to%20buy%20a%20tee%20or%20a%20print.%20What%27s%20available%3F",
-  buddies: "https://wa.me/85293855721?text=Hi%20Flock%21%20Please%20add%20me%20to%20the%20Flock%20Buddies%20list.",
+  shop: "https://wa.me/85293855721?text=Hi%20Flock%21%20Please%20let%20me%20know%20about%20the%20next%20tee%20or%20print%20drop.",
   contact: "mailto:flock@plastered.com"
 };
 
