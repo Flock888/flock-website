@@ -17,7 +17,7 @@ const BIRDS = [
   ["Oriental Magpie Robin", "oriental-magpie-robin", "", "mt"],
   ["Silver-eared Mesia", "silver-eared-mesia", "", "mt"],
   ["Sunbird", "sunbird", "", "mt"],
-  ["Redstart", "red-start", "", ""],
+  ["Daurian Redstart", "red-start", "", ""],
   ["Little Bunting", "little-bunting", "", "mt"],
   ["Yellow-browed Warbler", "yellow-browed-warbler", "", ""],
   ["Swinhoe's White-eye", "swinhoe-white-eye", "", ""],
