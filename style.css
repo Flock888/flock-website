@@ -251,3 +251,5 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .abouttext p{font-size:20px;margin:4px 0;text-shadow:0 1px 6px rgba(0,0,0,.7)}
 .abouttext b{font-family:'Saira Stencil One',var(--h);font-weight:400;font-size:24px}
 @media (max-width:900px){.abouthero{height:calc(100svh - 95px)}.abouttext p{font-size:17px}.abouttext b{font-size:20px}.abouttext{padding-bottom:28px}}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
