@@ -258,3 +258,5 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .serieshead span{font:500 16px var(--b);color:var(--muted)}
 /* per-photo framing on bird cards */
 .pic img[src*="red-billed-blue-magpie"]{object-position:12% 50%}
+.abouttext .aboutlead{max-width:620px;font-size:18px;line-height:1.5;margin:0 0 18px}
+@media (max-width:900px){.abouttext .aboutlead{font-size:15px;margin-bottom:12px}}
