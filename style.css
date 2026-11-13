@@ -253,3 +253,6 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 @media (max-width:900px){.abouthero{height:calc(100svh - 95px)}.abouttext p{font-size:17px}.abouttext b{font-size:20px}.abouttext{padding-bottom:28px}}
 
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.serieshead{font-size:clamp(30px,4vw,44px);margin:56px 0 18px;display:flex;align-items:baseline;gap:14px}
+.serieshead:first-child{margin-top:0}
+.serieshead span{font:500 16px var(--b);color:var(--muted)}

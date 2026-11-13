@@ -1,30 +1,36 @@
 // ===== The birds =====
-// [name, file name, note, videos]
+// Grouped by series. Each bird: [name, file name, note, videos]
 // videos: "m" = making-of, "t" = timelapse, "mt" = both, "" = none
 // Photo lives at img/bird-<file>.jpg, videos at video/<file>-making.mp4 and video/<file>-timelapse.mp4
-const BIRDS = [
-  ["Hoopoe", "hoopoe", "", "m"],
-  ["Fairy Pitta", "fairy-pita", "", "mt"],
-  ["White-throated Kingfisher", "white-throated-kingfisher", "", ""],
-  ["Red-billed Blue Magpie", "red-billed-blue-magpie", "", "t"],
-  ["Red-whiskered Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "m"],
-  ["Long-tailed Shrike", "shrike", "Rooftop at Sunset Peak, 869m", "m"],
-  ["Black-capped Kingfisher", "black-capped-kingfisher", "", "mt"],
-  ["Yellow-rumped Flycatcher (male)", "yellow-rumped-flycatcher-male", "", "mt"],
-  ["Yellow-rumped Flycatcher (female)", "yellow-rumped-flycatcher-female", "", "mt"],
-  ["Amur Paradise Flycatcher", "amur-flycatcher", "", ""],
-  ["Grey Wagtail", "grey-wagtail", "", ""],
-  ["Oriental Magpie Robin", "oriental-magpie-robin", "", "mt"],
-  ["Silver-eared Mesia", "silver-eared-mesia", "", "mt"],
-  ["Fork-tailed Sunbird", "sunbird", "", "mt"],
-  ["Daurian Redstart", "red-start", "", ""],
-  ["Little Bunting", "little-bunting", "", "mt"],
-  ["Yellow-browed Warbler", "yellow-browed-warbler", "", ""],
-  ["Swinhoe's White-eye", "swinhoe-white-eye", "", ""],
-  ["Tailorbird", "tailor-bird", "", "m"],
-  ["Waterhen", "waterhen", "", "mt"],
-  ["Streak-breasted Scimitar Babbler", "babbler", "", "mt"],
-  ["Common Myna", "myna-bird", "", "mt"]
+const SERIES = [
+  { name: "Series 1", birds: [
+    ["Red-billed Blue Magpie", "red-billed-blue-magpie", "", "t"],
+    ["Amur Paradise Flycatcher", "amur-flycatcher", "", ""],
+    ["Grey Wagtail", "grey-wagtail", "", ""],
+    ["Daurian Redstart", "red-start", "", ""],
+    ["Yellow-browed Warbler", "yellow-browed-warbler", "", ""],
+    ["Swinhoe's White-eye", "swinhoe-white-eye", "", ""],
+    ["White-throated Kingfisher", "white-throated-kingfisher", "", ""],
+    ["Long-tailed Shrike", "shrike", "Rooftop at Sunset Peak, 869m", "m"]
+  ]},
+  { name: "Series 2", birds: [
+    ["Hoopoe", "hoopoe", "", "m"],
+    ["Fairy Pitta", "fairy-pita", "", "mt"],
+    ["Black-capped Kingfisher", "black-capped-kingfisher", "", "mt"],
+    ["Silver-eared Mesia", "silver-eared-mesia", "", "mt"],
+    ["Fork-tailed Sunbird", "sunbird", "", "mt"],
+    ["Tailorbird", "tailor-bird", "", "m"],
+    ["Waterhen", "waterhen", "", "mt"],
+    ["Common Myna", "myna-bird", "", "mt"]
+  ]},
+  { name: "Series 3", birds: [
+    ["Red-whiskered Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "m"],
+    ["Yellow-rumped Flycatcher (male)", "yellow-rumped-flycatcher-male", "", "mt"],
+    ["Yellow-rumped Flycatcher (female)", "yellow-rumped-flycatcher-female", "", "mt"],
+    ["Oriental Magpie Robin", "oriental-magpie-robin", "", "mt"],
+    ["Little Bunting", "little-bunting", "", "mt"],
+    ["Streak-breasted Scimitar Babbler", "babbler", "", "mt"]
+  ]}
 ];
 
 const ICON = {
@@ -35,8 +41,15 @@ const ICON = {
 const LABEL = { m: "Making of", t: "Timelapse" };
 const KIND = { m: "making", t: "timelapse" };
 
-const grid = document.getElementById("grid");
-BIRDS.forEach(([name, file, note, vids]) => {
+const wrap = document.getElementById("grid");
+wrap.classList.remove("grid");
+SERIES.forEach(sr => {
+  const h = document.createElement("h2"); h.className = "serieshead";
+  h.innerHTML = `${sr.name} <span>${sr.birds.length} birds</span>`;
+  wrap.appendChild(h);
+  const grid = document.createElement("div"); grid.className = "grid";
+  wrap.appendChild(grid);
+  sr.birds.forEach(([name, file, note, vids]) => {
   const el = document.createElement("article");
   el.className = "bird";
   const btns = [...(vids || "")].map(k =>
@@ -52,6 +65,7 @@ BIRDS.forEach(([name, file, note, vids]) => {
   el.querySelectorAll("[data-k]").forEach(b => b.onclick = () =>
     openLb({ video: `video/${file}-${KIND[b.dataset.k]}.mp4` }, `${name} · ${LABEL[b.dataset.k]}`));
   grid.appendChild(el);
+  });
 });
 
 const lb = document.getElementById("lb");
