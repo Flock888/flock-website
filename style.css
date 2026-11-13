@@ -215,7 +215,7 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 @media (max-width:900px){.pagehead.photo{background-position:38% 0%;min-height:360px}.pagehead.photo .wrap{padding-top:22px}.pagehead.photo p{font-size:16px}}
 
 /* find page banner */
-.findhero{position:relative;height:calc(100vh - 67px);height:calc(100svh - 67px);min-height:520px;overflow:hidden;color:#fff;background-size:cover;background-position:50% 45%}
+.findhero{position:relative;height:calc(100vh - 67px);height:calc(100svh - 67px);min-height:520px;overflow:hidden;color:#fff;background-size:cover;background-position:50% 12%}
 .findhero::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(0,0,0,.6),transparent 40%);pointer-events:none}
 .findtext{position:absolute;z-index:2;left:max(24px,calc((100vw - 1180px)/2 + 24px));top:36px;max-width:330px}
 .findtext h1{font-size:clamp(44px,5vw,68px);margin:0 0 6px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
