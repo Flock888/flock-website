@@ -242,3 +242,12 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .pagehead .btns{margin-top:20px}
 @media (max-width:900px){.suphero{height:calc(100svh - 95px);background-position:47% 50%}.supbtns{flex-direction:column;align-items:flex-start}.suptext{padding-bottom:28px}}
 @media (max-width:900px){.suphero{background-position:44% 35%}.suptext h1{font-size:32px;margin-bottom:12px}.supbtns{gap:8px}.supbtns .btn{padding:10px 18px;font-size:15px}}
+
+/* about hero */
+.abouthero{position:relative;height:calc(100vh - 67px);height:calc(100svh - 67px);min-height:520px;background-size:cover;background-position:50% 50%;color:#fff;display:flex;align-items:flex-end}
+.abouthero::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.75));pointer-events:none}
+.abouttext{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:0 24px 40px}
+.abouttext h1{font-size:clamp(40px,5vw,68px);margin:0 0 12px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.abouttext p{font-size:20px;margin:4px 0;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.abouttext b{font-family:'Saira Stencil One',var(--h);font-weight:400;font-size:24px}
+@media (max-width:900px){.abouthero{height:calc(100svh - 95px)}.abouttext p{font-size:17px}.abouttext b{font-size:20px}.abouttext{padding-bottom:28px}}
