@@ -23,7 +23,7 @@ const BIRDS = [
   ["Swinhoe's White-eye", "swinhoe-white-eye", "", ""],
   ["Tailorbird", "tailor-bird", "", "m"],
   ["Waterhen", "waterhen", "", "mt"],
-  ["Babbler", "babbler", "", "mt"],
+  ["Streak-breasted Scimitar Babbler", "babbler", "", "mt"],
   ["Myna", "myna-bird", "", "mt"]
 ];
 
