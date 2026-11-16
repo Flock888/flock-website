@@ -270,3 +270,5 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .walktext .btns{margin-top:16px}
 .walktext .walknote{font-size:12px;opacity:.8;margin-top:16px;max-width:560px}
 @media (max-width:900px){.walkhero{height:calc(100svh - 95px);background-position:60% 50%}.walktext p{font-size:15px}.walktext h1{font-size:38px}.walktext{padding-bottom:22px}.walktext .walknote{font-size:11px}}
+@media (max-width:900px){.nav nav{gap:12px;justify-content:space-between}.nav nav a{font-size:14px}}
+@media (max-width:370px){.nav nav{gap:9px}.nav nav a{font-size:12.5px}}
