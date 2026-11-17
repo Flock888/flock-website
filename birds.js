@@ -24,7 +24,7 @@ const SERIES = [
     ["Common Myna", "myna-bird", "", "mt"]
   ]},
   { name: "Series 3", birds: [
-    ["Red-whiskered Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "m"],
+    ["Red-whiskered Bulbul", "bulbul", "Our biggest mural yet, made possible by UTMB with support from Silvermine", "mt"],
     ["Yellow-rumped Flycatcher (male)", "yellow-rumped-flycatcher-male", "", "mt"],
     ["Yellow-rumped Flycatcher (female)", "yellow-rumped-flycatcher-female", "", "mt"],
     ["Oriental Magpie Robin", "oriental-magpie-robin", "", "mt"],
