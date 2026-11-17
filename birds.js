@@ -18,7 +18,7 @@ const SERIES = [
     ["Fairy Pitta", "fairy-pita", "", "mt"],
     ["Black-capped Kingfisher", "black-capped-kingfisher", "", "mt"],
     ["Silver-eared Mesia", "silver-eared-mesia", "", "mt"],
-    ["Fork-tailed Sunbird", "sunbird", "", "mt"],
+    ["Fork-tailed Sunbird", "sunbird", "Painted over, 2026", "mt"],
     ["Tailorbird", "tailor-bird", "", "m"],
     ["Waterhen", "waterhen", "", "mt"],
     ["Common Myna", "myna-bird", "", "mt"]
