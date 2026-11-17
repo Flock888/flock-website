@@ -275,3 +275,4 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .photocredit{position:absolute;right:16px;z-index:3;font:500 12px var(--b);color:#fff;opacity:.85;text-decoration:none;text-shadow:0 1px 4px rgba(0,0,0,.85)}
 .photocredit.top{top:12px}.photocredit.btm{bottom:10px}
 .photocredit:hover{opacity:1;text-decoration:underline}
+.hero picture{display:block;width:100%;height:100%}
