@@ -180,11 +180,11 @@ footer{border-top:1px solid rgba(0,0,0,.08)}
 .drop{margin:0}
 .dimg{position:relative;border-radius:16px;overflow:hidden;background:#fff}
 .dimg img{width:100%;aspect-ratio:1;object-fit:cover}
-.stamp{position:absolute;top:78%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);padding:8px 22px;border:4px solid var(--rust);color:var(--rust);font:800 30px var(--h);text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.75);border-radius:6px;white-space:nowrap}
+.stamp{position:absolute;top:78%;left:50%;transform:translate(-50%,-50%) rotate(-12deg);padding:6px 20px 4px;border:5px solid #ce141a;color:#ce141a;font:400 36px 'Saira Stencil One',var(--h);text-transform:uppercase;letter-spacing:.03em;line-height:1.1;background:rgba(250,246,238,.72);border-radius:8px;white-space:nowrap;-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 0 2.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 0 2.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");-webkit-mask-size:180px;mask-size:180px}
 .drop figcaption{display:flex;flex-direction:column;margin-top:10px}
 .drop figcaption b{font-family:var(--h);font-size:19px}
 .drop figcaption span{font-size:14px;color:var(--muted)}
-@media (max-width:700px){.dropgrid{gap:10px;grid-template-columns:1fr 1fr}.stamp{font-size:12px;border-width:2px;padding:3px 7px}.drop figcaption b{font-size:15px}.drop figcaption span{font-size:12px}}
+@media (max-width:700px){.dropgrid{gap:10px;grid-template-columns:1fr 1fr}.stamp{font-size:15px;border-width:2px;padding:3px 8px 2px;border-radius:4px;-webkit-mask-size:90px;mask-size:90px}.drop figcaption b{font-size:15px}.drop figcaption span{font-size:12px}}
 
 /* stencil headings */
 h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
