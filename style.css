@@ -195,8 +195,8 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 #support-cards,.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 
 /* home: photo only, menu over it */
-.home .nav{position:absolute;left:0;right:0;top:0;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,0));border:0;backdrop-filter:none;color:#fff;padding-top:20px;padding-bottom:40px}
-.home .nav nav a{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.home .nav{position:absolute;left:0;right:0;top:0;background:linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.6) 55%,rgba(0,0,0,0));border:0;backdrop-filter:none;color:#fff;padding-top:20px;padding-bottom:54px}
+.home .nav nav a{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.9)}
 .home .nav nav a:hover{color:var(--rust)}
 .home .ico:hover{background:#fff;color:var(--ink)}
 .home .logo img{height:38px}
