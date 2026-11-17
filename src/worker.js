@@ -10,7 +10,9 @@ async function sha256(text) {
 
 export default {
   async fetch(request, env) {
-    if (LOCKED) {
+    // Tab icons are let through the lock: browsers fetch them without the password
+    const ICONS = ["/favicon.ico", "/favicon.png", "/apple-touch-icon.png"];
+    if (LOCKED && !ICONS.includes(new URL(request.url).pathname)) {
       const auth = request.headers.get("Authorization") || "";
       let ok = false;
       if (auth.startsWith("Basic ")) {
