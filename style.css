@@ -195,7 +195,7 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 #support-cards,.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 
 /* home: photo only, menu over it */
-.home .nav{position:fixed;left:0;right:0;top:0;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,0));border:0;backdrop-filter:none;color:#fff;padding-top:20px;padding-bottom:40px}
+.home .nav{position:absolute;left:0;right:0;top:0;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,0));border:0;backdrop-filter:none;color:#fff;padding-top:20px;padding-bottom:40px}
 .home .nav nav a{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .home .nav nav a:hover{color:var(--rust)}
 .home .ico:hover{background:#fff;color:var(--ink)}
@@ -204,7 +204,7 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .hero.full::after{display:none}
 .hero.full img{object-position:50% 40%}
 .homefoot{position:fixed;left:0;right:0;bottom:0;padding:14px 20px;font-size:12px;color:rgba(255,255,255,.85);text-align:center;background:linear-gradient(transparent,rgba(0,0,0,.45));text-shadow:0 1px 4px rgba(0,0,0,.6)}
-.home{overflow:hidden}
+.home{overflow-x:hidden}
 @media (max-width:900px){.home .logo img{height:28px}.home .nav{padding-top:12px}}
 
 /* photo banner */
@@ -277,3 +277,20 @@ h1,h2{font-family:'Saira Stencil One',var(--h);font-weight:400;letter-spacing:0}
 .photocredit:hover{opacity:1;text-decoration:underline}
 .hero picture{display:block;width:100%;height:100%}
 .abouttext a{color:#fff;text-underline-offset:3px}
+/* scrolling homepage */
+html{scroll-behavior:smooth}
+.scrollcue{position:absolute;z-index:3;left:50%;bottom:18px;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.35);animation:cue 1.8s ease-in-out infinite}
+.scrollcue svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes cue{50%{transform:translate(-50%,7px)}}
+@media (prefers-reduced-motion:reduce){.scrollcue{animation:none}html{scroll-behavior:auto}}
+.homeintro{padding-top:70px;padding-bottom:10px;max-width:900px;text-align:center}
+.homeintro h2{font-size:clamp(28px,4.2vw,48px);margin:0 0 14px;line-height:1.1}
+.homeintro p{font-size:19px;color:var(--muted);margin:0}
+.hometiles{padding-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.hometile{position:relative;display:block;border-radius:16px;overflow:hidden;aspect-ratio:3/4;color:#fff;text-decoration:none}
+.hometile img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.hometile:hover img{transform:scale(1.04)}
+.hometile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.8))}
+.hometile span{position:absolute;z-index:2;left:16px;right:16px;bottom:14px;font-size:14px;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.hometile b{display:block;font-family:'Saira Stencil One',var(--h);font-weight:400;font-size:26px;line-height:1.1;margin-bottom:2px}
+@media (max-width:900px){.hometiles{grid-template-columns:1fr 1fr;gap:10px;padding-top:26px}.hometile b{font-size:20px}.hometile span{font-size:12px;left:12px;right:12px;bottom:10px}.homeintro{padding-top:44px}.homeintro p{font-size:16px}}
