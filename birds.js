@@ -40,6 +40,8 @@ const ICON = {
 };
 const LABEL = { m: "Making of", t: "Timelapse" };
 const KIND = { m: "making", t: "timelapse" };
+// Birds that have been painted over: no map pin
+const GONE = ["sunbird"];
 
 const wrap = document.getElementById("grid");
 wrap.classList.remove("grid");
@@ -54,11 +56,13 @@ SERIES.forEach(sr => {
   el.className = "bird";
   const btns = [...(vids || "")].map(k =>
     `<button class="ico" data-k="${k}" title="${LABEL[k]}" aria-label="${LABEL[k]}: ${name}">${ICON[k]}</button>`).join("");
+  const pin = GONE.includes(file) ? "" :
+    `<a href="${LINKS.map}" target="_blank" rel="noopener" class="ico" title="Find it on the map">${ICON.pin}</a>`;
   el.innerHTML = `
     <button class="pic" aria-label="View ${name}"><img loading="lazy" src="img/bird-${file}.jpg" alt="${name} mural"></button>
     <div class="meta">
       <h3>${name}</h3>
-      <div class="acts">${btns}<a href="${LINKS.map}" target="_blank" rel="noopener" class="ico" title="Find it on the map">${ICON.pin}</a></div>
+      <div class="acts">${btns}${pin}</div>
     </div>`;
   const cap = name + (note ? " · " + note : "");
   el.querySelector(".pic").onclick = () => openLb({ img: `img/bird-${file}.jpg` }, cap);
