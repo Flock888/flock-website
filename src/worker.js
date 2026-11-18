@@ -1,6 +1,6 @@
 // Temporary password lock while the site is being finished.
-// To go live: delete the LOCK check below (or set LOCKED to false) and push.
-const LOCKED = false;
+// Password lock is ON. To go live: set LOCKED to false and push.
+const LOCKED = true;
 const HASH = "c31430d45bacefec9be016d6593b69331165985d7be8fb778fbeadfc88cab830"; // sha256 of "user:password"
 
 async function sha256(text) {
